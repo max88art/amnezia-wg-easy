@@ -396,7 +396,7 @@ module.exports = class Server {
     router3
       .get('/api/wireguard/backup', defineEventHandler(async (event) => {
         const config = await WireGuard.backupConfiguration();
-        setHeader(event, 'Content-Disposition', 'attachment; filename="wg0.json"');
+        setHeader(event, 'Content-Disposition', 'attachment; filename="wg8.json"');
         setHeader(event, 'Content-Type', 'text/json');
         return config;
       }))
